@@ -1,0 +1,5 @@
+package com.lcwd.rating.service.entities;
+
+public class Rating {
+
+}

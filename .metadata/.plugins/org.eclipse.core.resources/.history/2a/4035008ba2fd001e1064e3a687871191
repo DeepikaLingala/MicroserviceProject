@@ -1,0 +1,22 @@
+package com.lcwd.user.service.exception;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.lcwd.user.service.payload.ApiResponse;
+
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+	@ExceptionHandler(ResourceNotFondException.class)
+	public ResponseEntity<ApiResponse> handlerResourceNotFoundException(ResourceNotFondException ex) {
+		String message = ex.getMessage();
+		
+		
+		ApiResponse build = ApiResponse.builder().message(message).success(true).status(NOT_FOUND).build();
+		
+
+	}
+}

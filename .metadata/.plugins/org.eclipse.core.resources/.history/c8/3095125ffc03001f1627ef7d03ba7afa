@@ -1,0 +1,11 @@
+package com.lcwd.hotel.service.controllers;
+
+public class test {
+	public int i = 3;
+
+	public test() {
+
+		this.i = 2;
+	}
+
+}

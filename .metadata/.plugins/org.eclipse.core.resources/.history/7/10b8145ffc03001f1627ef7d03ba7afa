@@ -1,0 +1,17 @@
+package com.lcwd.hotel.service.controllers;
+
+public class test2 extends test {
+	String a = "r";
+	public test2() {
+		//super(test);
+		i = 3;
+	}
+
+	
+
+	 public static void main(String[] args) { 
+		 test2 te = new test2();
+	 
+	 System.out.println(te.i);  }
+	 
+}

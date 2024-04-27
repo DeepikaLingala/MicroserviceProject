@@ -1,0 +1,6 @@
+package com.lcwd.hotel.service.exception;
+
+public class ResourceNotFoundException extends RuntimeException {
+	
+
+}
